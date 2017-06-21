@@ -1,0 +1,6 @@
+[package]
+name = "nightly_cmd_fail"
+version = "0.1.0"
+authors = ["Michal Budzynski <budziq@gmail.com>"]
+
+[dependencies]

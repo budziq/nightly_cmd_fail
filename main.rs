@@ -1,16 +1,7 @@
 use std::process::Command;
 
-#[cfg(windows)]
-mod execs {
-    pub const NPM: &'static str = "npm.cmd";
-}
-#[cfg(not(windows))]
-mod execs {
-    pub const NPM: &'static str = "npm";
-}
-
 fn main() {
-    let status = Command::new(execs::NPM)
+    let status = Command::new("npm.cmd")
         .arg("-v")
         .output();
 

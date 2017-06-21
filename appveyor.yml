@@ -30,7 +30,9 @@ build: false
 
 # Equivalent to Travis' `script` phase
 test_script:
-  - cargo run --verbose
+    #- cargo run --verbose
+    - rustc src\main.rs
+    - main.exe
 
 branches:
   only:

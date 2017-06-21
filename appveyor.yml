@@ -30,7 +30,6 @@ build: false
 
 # Equivalent to Travis' `script` phase
 test_script:
-  - cargo build --verbose --features=regenerate-css
   - cargo run --verbose
 
 branches:

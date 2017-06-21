@@ -11,8 +11,7 @@ mod execs {
 
 fn main() {
     let status = Command::new(execs::NPM)
-        .args(&["list", "-g"])
-        .arg("stylus")
+        .arg("-v")
         .output();
 
     println!("Command exited with '{:?}'", status);

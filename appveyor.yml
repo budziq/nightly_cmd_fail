@@ -32,8 +32,6 @@ install:
   - cargo -V
   - node --version
   - npm --version
-  - npm install -g stylus nib
-  - npm -g list
 
 build: false
 
